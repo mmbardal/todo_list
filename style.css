@@ -1,0 +1,221 @@
+body{
+    background:
+linear-gradient(135deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+linear-gradient(225deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+background-color:#708090;
+background-size: 64px 128px;
+
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* weather api style */
+#wea{
+    position: fixed;
+    background-color: #485a6d;
+    width: 17%;
+    
+    color: rgb(229, 248, 255);
+    border-radius: 5px;
+    
+    
+    box-sizing: border-box ;
+}
+#wea p{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top:5px ;
+}
+
+/* alertbox */
+#error{
+background-color: rgb(67, 116, 117);
+padding: 5px 10px;
+border-radius: 5px;
+color: white;
+width: 20%;
+
+position: fixed;
+right: 20px;
+top: 20px;
+text-align: center;
+
+height: 100px;
+
+opacity: 1;
+transition:opacity 500ms ;
+
+}
+.fade#error{
+    opacity: 0;
+}
+#close-alert{
+    border-radius: 5px;
+    font-size: 20;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #70809000 ;
+    border: none;
+    margin: 0px;
+    position: relative;
+    right: -60px;
+}
+#close-alert:hover{
+
+   cursor: pointer;
+
+}
+#detail{
+    
+    margin-top: 20px;
+    
+}
+
+
+
+
+
+
+/* main box */
+.container{
+    position: relative;
+    padding: 10px;
+    top: 100px;
+    width: 40%;
+    margin: auto;
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #708090;
+    
+    border-radius: 10px ;
+
+    border: 5px solid #5d6a77;
+}
+
+
+/* input box */
+#info{
+  
+    padding: 3px 5px;
+    background-color: rgb(218, 218, 218);
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+#info:focus{
+    
+    outline: none;
+    border-radius: 2px;
+
+}
+#info:hover{
+    background-color: rgb(182, 182, 182);
+    cursor: pointer;
+    
+}
+
+
+
+/* add button */
+#sub{
+    padding: 3px 5px;
+    background-color: rgb(218, 218, 218);
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+#sub:hover{
+    
+    outline: none;
+    border-radius: 2px;
+    background-color: rgb(182, 182, 182);
+}
+
+
+
+/* items style */
+#item{
+    list-style-type: none;
+    background-color: thistle;
+    text-align: left;
+    border-radius: 5px ;
+    padding: 3px 5px;
+    transition: 0.5s;
+    width: 200px;
+    margin-bottom: 10px;
+    margin-right:40px;
+    opacity: 0.8;
+}
+span{
+    margin-left: 5px;
+}
+
+
+/* counter style */
+#total{
+    
+    margin-right:140px ;
+    font-size: 10;
+}
+
+
+
+
+
+
+/* duties */
+
+
+#duties{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(115, 138, 138);
+    border-radius: 3px;
+    width: 60%;
+    
+}
+.duty{
+    width: 35%;
+    box-sizing: border-box;
+    background-color: azure;
+    border: none;
+    border-radius:1px ;
+    margin: 5px;
+    
+    transition:background-color 500ms ,border-radius 500ms ;
+    /* transition-delay: 0.25s; */
+}
+.duty:hover{
+cursor: pointer;
+border-radius:5px ;
+background-color: rgb(166, 208, 208);
+
+}
+
+
+
+/* visiblty of elements */
+.visiblity{
+    opacity: 1;
+}
+.visiblityhide{
+    opacity: 0;
+}
+
+
+/* for done tasks */
+.decorator{
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+  
+  

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>todo list</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="mehdi.js"></script>
+    </head>
+    <header>
+        
+    </header>
+    <body>
+
+
+        <div id="wea">
+            <p id="des"></p>
+            <p id="temp"></p>
+        </div>
+        <div id="error" style="visibility:hidden;">
+            <button id="close-alert" onclick="close_alert()">x</button>
+            <p id="detail"> </p>
+           
+        </div>
+        <div class="container">
+           
+            <div><input type="text" placeholder="your task" id="info" onkeypress="return event.keyCode != 13;" > 
+                <input type="submit" onclick="adds()" value="add" id="sub"></div>
+            
+            <ul id="list">
+        
+            </ul>
+            <ul id="list2">
+
+            </ul>
+
+
+            <div id="duties" class="visiblityhide">
+                <input type="submit" value="edit" onclick="edit()" title="after editing press enter" class="duty">
+                <input type="submit" value="done"  onclick="done()" class="duty">
+                <input type="submit" value="delete"  onclick="del()" class="duty">
+                
+            </div>
+            <p id="total">total item is: 0</p>
+             
+        </div>
+   
+    </body>
+</html>
