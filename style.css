@@ -140,7 +140,7 @@ height: 100px;
     border-radius: 5px ;
     padding: 3px 5px;
     transition: 0.5s;
-    width: 200px;
+    width: 250px;
     margin-bottom: 10px;
     margin-right:40px;
     opacity: 0.8;
@@ -166,16 +166,9 @@ span{
 /* duties */
 
 
-#duties{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(115, 138, 138);
-    border-radius: 3px;
-    width: 60%;
-    
-}
+
 .duty{
-    width: 15%;
+    width: 30px;
     box-sizing: border-box;
     background-color: rgba(240, 255, 255, 0);
     border: none;
@@ -197,11 +190,13 @@ background-color: rgb(166, 208, 208);
     text-decoration: line-through;
     pointer-events: none;
     filter: grayscale(1) blur(1px);
+    
 }
 .disabler{
     
     pointer-events: none;
     filter: grayscale(0.5) blur(1px);
+    transition: 300ms;
 }
 
 
