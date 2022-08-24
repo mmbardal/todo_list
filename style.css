@@ -195,8 +195,14 @@ background-color: rgb(166, 208, 208);
 
 .decorator{
     text-decoration: line-through;
+    pointer-events: none;
+    filter: grayscale(1) blur(1px);
 }
-
+.disabler{
+    
+    pointer-events: none;
+    filter: grayscale(0.5) blur(1px);
+}
 
 
 
