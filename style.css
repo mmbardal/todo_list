@@ -8,14 +8,29 @@ background-size: 64px 128px;
 font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
+
+
 /* weather api style */
-#weather{
+
+.position-weather{
     position: fixed;
+    left: 10px;
+    top: 10px;
+    /* right: 10px; */
+    width: 20%;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+#weather{
+    
     background-color: #485a6d;
-    width: 17%;
+    
     
     color: rgb(229, 248, 255);
-    border-radius: 5px;
+    
     
     
     box-sizing: border-box ;
@@ -27,21 +42,22 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 /* alertbox */
+
+.position-error{
+    width: 20%;
+
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    height: 100px;
+    background-color: rgb(67, 116, 117);
+}
+
 #error{
-background-color: rgb(67, 116, 117);
 padding: 5px 10px;
 border-radius: 5px;
 color: white;
-width: 20%;
-
-position: fixed;
-right: 20px;
-top: 20px;
 text-align: center;
-
-height: 100px;
-
-
 }
 
 #close-alert{
@@ -62,9 +78,10 @@ height: 100px;
 
 }
 #detail{
-    
-    margin-top: 40px;
-    
+    position: absolute;
+    top: 40%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
 }
 
 
@@ -73,13 +90,19 @@ height: 100px;
 
 
 /* main box */
-.container{
+
+.position-container{
     position: relative;
-    padding: 10px;
+    
     top: 100px;
     width: 40%;
     margin: auto;
-    
+}
+
+
+.container{
+   
+    padding: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -153,9 +176,8 @@ span{
 
 /* counter style */
 #total{
+margin-left: -70%;
     
-    margin-right:140px ;
-    font-size: 10;
 }
 
 
@@ -182,18 +204,19 @@ span{
 cursor: pointer;
 border-radius:5px ;
 background-color: rgb(166, 208, 208);
-
 }
 
 
+
+/*done tasks*/
 .decorator{
     text-decoration: line-through;
     pointer-events: none;
-    filter: grayscale(1) blur(1px);
-    
+    filter: grayscale(1) blur(1px);   
 }
-.disabler{
-    
+
+/*edit time*/
+.disabler{    
     pointer-events: none;
     filter: grayscale(0.5) blur(1px);
     transition: 300ms;
@@ -201,8 +224,38 @@ background-color: rgb(166, 208, 208);
 
 
 
-
-
-
+@media only screen and (max-width: 768px) {
+    /* For mobile: */
+    .position-weather{
+        text-align: center;
+        top: 0;
+        left: 0;
+        border-radius: 0;
+        width: 100%;
+        margin: auto;        
+    }
+    .position-container{
+        width: 90%;
+        text-align: center;
+    }
+    .position-error{
+        top: 0;
+        right: 0;
+        z-index: 10;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        height: 200px;
+        margin: auto;
+        background-color: rgba(47, 105, 105, 0.938);
+    }
+    #total{
+        
+        width: 100px;
+        margin: auto;       
+        font-size: 10;
+    }
+   
+  }
   
   
